@@ -38,7 +38,7 @@ const password_gen = (password_length, isLowerCase, isUpperCase, isNumber, isSpe
     let isUpperCase = document.getElementById("Uppercase").checked;
     let isNumber = document.getElementById("Number").checked;
     let isSpecial = document.getElementById("special").checked;
-    if(password_length<0)
+    if(password_length<=0)
     {
         output.textContent = "Password length must be greater than zero!"
     }
@@ -56,4 +56,5 @@ const password_gen = (password_length, isLowerCase, isUpperCase, isNumber, isSpe
 
     output.textContent = `Password = ${password_gen(password_length, isLowerCase, isUpperCase, isNumber, isSpecial)}`;
 });
+
 
