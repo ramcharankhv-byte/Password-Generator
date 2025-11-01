@@ -41,6 +41,7 @@ const password_gen = (password_length, isLowerCase, isUpperCase, isNumber, isSpe
     if(password_length<=0)
     {
         output.textContent = "Password length must be greater than zero!"
+      return ;
     }
     if(password_length>15)
     {
@@ -56,5 +57,6 @@ const password_gen = (password_length, isLowerCase, isUpperCase, isNumber, isSpe
 
     output.textContent = `Password = ${password_gen(password_length, isLowerCase, isUpperCase, isNumber, isSpecial)}`;
 });
+
 
 
